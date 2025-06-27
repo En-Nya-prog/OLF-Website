@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Learn More & Book an Appointment</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <section class="learn-more">
+    <h2>Book an Appointment</h2>
+    <form id="bookingForm">
+      <input type="text" name="name" placeholder="Your full name" required />
+      <input type="email" name="email" placeholder="Your email address" required />
+      <input type="date" name="date" required />
+      <input type="time" name="time" required />
+      <textarea name="message" placeholder="Any notes or intention..."></textarea>
+      <button type="submit">Confirm Booking</button>
+    </form>
+  </section>
+
+  <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore.js"></script>
+  <script src="firebase-config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

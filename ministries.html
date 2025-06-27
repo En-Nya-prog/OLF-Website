@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ministries | Our Church</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    .ministries{
+        background: #f9f9f9;
+        padding: 60px 20px;
+        text-align: center;
+    }
+
+    .ministry-card {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 30px auto;
+      max-width: 800px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: pionter;
+    }
+    .ministry-card img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        margin-bottom:15px ;
+    }
+    .sacrament-gallery {
+        display: none;
+        margin-top:20px;
+        text-align: left;
+    }
+    .sacrament-item {
+      margin-bottom: 20px;
+    }
+
+    .sacrament-item img {
+      width: 100%;
+      height: 400px;
+      border-radius: 8px;
+      margin: 10px 0;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .sacrament-item h4 {
+      color: #2E3A59;
+    }
+    .sacrament-item p {
+      color: #555;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Our Church Ministries</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="Homilies.html">Homilies</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+<section class="ministries">
+  <div class="ministry-card" onclick="toggleSacraments()">
+  <img src="images/Sacraments1.jpg" alt="Ministry of the Sacraments">
+  <h3>Ministry of the Sacraments</h3>
+  <p>Celebrating the seven sacraments as visible signs of grace. Click to explore each one.</p>
+
+  <div id="sacrament-gallery" style="display: none; margin-top: 20px;">
+    <div class="sacrament-item">
+      <h4>Baptism</h4>
+      <img src="images/Baptism.jpg" alt="Baptism">
+      <p>The gateway to Christian life — cleansing us from original sin and making us children of God.</p>
+    </div>
+    <div class="sacrament-item">
+      <h4>Confirmation</h4>
+      <img src="images/IMG-20230709-WA0019.webp" alt="Confirmation">
+      <p>Strengthens our bond with Christ and equips us with the gifts of the Holy Spirit.</p>
+    </div>
+    <div class="sacrament-item">
+      <h4>Eucharist</h4>
+      <img src="images/Eucharist.jpg" alt="Eucharist">
+      <p>The source and summit of our faith — partaking in the Body and Blood of Christ for eternal life.</p>
+    </div>
+    <div class="sacrament-item">
+      <h4>Penance (Confession)</h4>
+      <img src="images/confession.jpg" alt="Penance">
+      <p>God’s mercy in action — restoring us through forgiveness and reconciliation through the Priest.</p>
+    </div>
+    <div class="sacrament-item">
+      <h4>Anointing of the Sick</h4>
+      <img src="images/Anioting.jpg" alt="Anointing of the Sick">
+      <p>Healing grace and comfort for those who are ill, suffering, or near death.</p>
+    </div>
+    <div class="sacrament-item">
+      <h4>Holy Orders</h4>
+      <img src="images/Holy orders.jpg" alt="Holy Orders">
+      <p>Ordains men to serve as deacons, priests, and bishops and sisters in the mission of the Church.</p>
+    </div>
+    <div class="sacrament-item">
+      <h4>Matrimony</h4>
+      <img src="images/The-catholic-wedding-ceremony.webp" alt="Matrimony">
+      <p>The sacred union of husband and wife — a visible sign of Christ’s love for the Church.</p>
+    </div>
+  </div>
+</div>
+
+  <div class="ministry-card">
+    <img src="images/OIP (2).webp" alt="Ministry of the Word">
+    <h3>Ministry of the Word</h3>
+    <p>Proclaiming the Gospel and teaching the faith through scripture, catechesis, and preaching.</p>
+  </div>
+
+
+
+    <div class="ministry-card" >
+      <img src="images/Social-Donation-Church.webp" alt="Ministry of Charity">
+      <h3>Ministry of Charity</h3>
+      <p>Serving the poor, the sick, and the marginalized through acts of compassion, justice, and love.</p>
+    </div>
+
+    <div class="ministry-card">
+      <img src="images/CAVDAG-Participants-for-a-group-photo-with-the-Bishop-of-Obuasi-Most-Rev-John-Afoakwah-Some-members-of-the-Christian-Mothers-Association-and-other-Invited-Guests-at-Christian-Village-Santasi..jpeg" alt="Ministry of Evangelization">
+      <h3>Ministry of Evangelization</h3>
+      <p>Spreading the Gospel and inviting others into a relationship with Christ through witness, mission, and outreach.</p>
+    </div>
+  </section>
+
+  <section class="associations">
+    <h2>Church Associations</h2>
+  </div class="association-container">
+    <div class="association-card">
+      <img src="images/WhatsApp Image 2025-06-19 at 10.11.59.jpeg" alt="Legion of Mary">
+      <img src="images/WhatsApp Image 2025-06-20 at 16.43.28 (1).jpeg" alt="Legion of Mary">
+      <h3>Legion of  Mary</h3>
+      <p>Empowering young people to grow in faith through the intercession of Our blessed virgin Mary.</p>
+    </div>
+
+    <div class="association-card">
+      <img src="images/R (2).jpg" alt="St Don Bosco Choir">
+      <h3>St. Don Bosco Choir</h3>
+      <p>Leading the congregation in worship through music and praise.</p>
+    </div>
+
+    <div class="association-card">
+      <img src="images/CMA.jpg" alt="Christian Mothers Association">
+      <h3>Christian Mothers Association</h3>
+      <p>Supporting women in spiritual growth, community, and outreach.</p>
+    </div>
+</div>    <!-- Add more associations as needed --> 
+
+  </section> 
+           <footer>
+        <p>&copy; 2025 OLF Church | All Rights Reserved</p>
+        <p>Follow us on social media for updates and events</p>
+        <div class="social-icons">
+  <a href="https://web.facebook.com/sampaolfparish" target="_blank"><i class="fab fa-facebook-f"></i></a>
+  <a href="https://x.com/YourChurchHandle" target="_blank"><i class="fab fa-x-twitter"></i></a>
+  <a href="https://www.tiktok.com/@olfparishsampacds?lang=en" target="_blank"><i class="fab fa-tiktok"></i></a>
+</div>
+       
+</footer>
+
+  <script>
+  function toggleSacraments() {
+    const gallery = document.getElementById("sacrament-gallery");
+    if (gallery) {
+      gallery.style.display = (gallery.style.display === "none") ? "block" : "none";
+    }
+  }
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+[debug] [2025-06-27T10:05:22.644Z] ----------------------------------------------------------------------
+[debug] [2025-06-27T10:05:22.647Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\TGTS AFRICA\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2025-06-27T10:05:22.648Z] CLI Version:   14.8.0
+[debug] [2025-06-27T10:05:22.648Z] Platform:      win32
+[debug] [2025-06-27T10:05:22.648Z] Node Version:  v22.16.0
+[debug] [2025-06-27T10:05:22.648Z] Time:          Fri Jun 27 2025 10:05:22 GMT+0000 (Greenwich Mean Time)
+[debug] [2025-06-27T10:05:22.648Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-06-27T10:05:22.868Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-06-27T10:05:22.868Z] > authorizing via signed-in user (eysie@palm.edu.gh)
+[debug] [2025-06-27T10:05:22.869Z] [iam] checking project church-website-a1902 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-06-27T10:05:22.870Z] Checked if tokens are valid: true, expires at: 1751020317873
+[debug] [2025-06-27T10:05:22.870Z] Checked if tokens are valid: true, expires at: 1751020317873
+[debug] [2025-06-27T10:05:22.871Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/church-website-a1902:testIamPermissions [none]
+[debug] [2025-06-27T10:05:22.871Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/church-website-a1902:testIamPermissions x-goog-quota-user=projects/church-website-a1902
+[debug] [2025-06-27T10:05:22.871Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/church-website-a1902:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-06-27T10:05:24.158Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/church-website-a1902:testIamPermissions 200
+[debug] [2025-06-27T10:05:24.158Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/church-website-a1902:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-06-27T10:05:24.158Z] Checked if tokens are valid: true, expires at: 1751020317873
+[debug] [2025-06-27T10:05:24.158Z] Checked if tokens are valid: true, expires at: 1751020317873
+[debug] [2025-06-27T10:05:24.159Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/church-website-a1902 [none]
+[debug] [2025-06-27T10:05:25.468Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/church-website-a1902 200
+[debug] [2025-06-27T10:05:25.468Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/church-website-a1902 {"projectId":"church-website-a1902","projectNumber":"4472511827","displayName":"church website","name":"projects/church-website-a1902","resources":{"hostingSite":"church-website-a1902"},"state":"ACTIVE","etag":"1_718ed948-1600-46f5-b1be-331ead41fb2d"}
+[info] 
+[info] === Deploying to 'church-website-a1902'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2025-06-27T10:05:25.474Z] Checked if tokens are valid: true, expires at: 1751020317873
+[debug] [2025-06-27T10:05:25.474Z] Checked if tokens are valid: true, expires at: 1751020317873
+[debug] [2025-06-27T10:05:25.474Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/church-website-a1902/versions [none]
+[debug] [2025-06-27T10:05:25.474Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/church-website-a1902/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2025-06-27T10:05:27.046Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/church-website-a1902/versions 200
+[debug] [2025-06-27T10:05:27.046Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/church-website-a1902/versions {"name":"projects/4472511827/sites/church-website-a1902/versions/8bc780090703046f","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[church-website-a1902]: beginning deploy... 
+[info] i  hosting[church-website-a1902]: found 289180 files in . 
+[debug] [2025-06-27T10:06:26.648Z] [hosting] uploading with 200 concurrency
+[debug] [2025-06-27T10:06:26.649Z] [hosting] hash cache [] not populated
+[debug] [2025-06-27T10:06:26.731Z] Error: EBUSY: resource busy or locked, open 'C:\Users\TGTS AFRICA\ntuser.dat.LOG2'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-06-27T10:06:26.732Z] Error: EBUSY: resource busy or locked, open 'C:\Users\TGTS AFRICA\ntuser.dat.LOG1'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-06-27T10:06:26.733Z] Error: EBUSY: resource busy or locked, open 'C:\Users\TGTS AFRICA\NTUSER.DAT'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-06-27T10:06:26.742Z] Error: EISDIR: illegal operation on a directory, read
+[error] 
+[error] Error: An unexpected error has occurred.

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+<nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="Homilies.html">Homilies</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  <section class="contact-section">
+    <div class="contact-container">
+      <h1>Contact Us</h1>
+      <p>Have a question, suggestion, or just want to say hello? Reach out!</p>
+      <form id="contactForm">
+        <input type="text" id="name" name="name" placeholder="Your Name" required />
+        <input type="text" id="title" name="title" placeholder="Subject or Title" required />
+        <input type="email" id="email" name="email" placeholder="Your Email" required />
+
+        <button type="submit">Send</button>
+        <p id="form-status"></p>
+      </form>
+    </div>
+  </section>
+<!-- Firebase core SDK v8 -->
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
+<!-- Your custom JS script -->
+<script type="module" src="script.js"></script>
+
+
+  <section class="appointment-section">
+  <h2>Book an Appointment</h2>
+  <p> Please fill out the form below to schedule your visit</p>
+  <form id="appointment-form">
+    <input type="text" name="name" placeholder="Your full name" required />
+    <input type="email" name="email" placeholder="Your email address" required />
+    <input type="date" name="date" required />
+    <input type="time" name="time" required />
+    <textarea name="message" placeholder="Any notes or intention..."></textarea>
+    <button type="submit">Confirm Booking</button>
+  </form>
+</section>
+<script type="module" src="firebase-config.js"></script>
+<script type="module" src="booking.js"></script>
+
+
+  <footer>
+        <p>&copy; 2025 OLF Church | All Rights Reserved</p>
+        <p>Follow us on social media for updates and events</p>
+        <div class="social-icons">
+  <a href="https://web.facebook.com/sampaolfparish" target="_blank"><i class="fab fa-facebook-f"></i></a>
+  <a href="https://x.com/YourChurchHandle" target="_blank"><i class="fab fa-x-twitter"></i></a>
+  <a href="https://www.tiktok.com/@olfparishsampacds?lang=en" target="_blank"><i class="fab fa-tiktok"></i></a>
+</div>
+        
+</footer>
+</body>
+</html>
