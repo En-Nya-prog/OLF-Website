@@ -411,6 +411,43 @@ form button {
 form button:hover {
   background-color: #0056b3;
 }
+.card {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.card h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.card form label {
+  display: block;
+  margin-top: 10px;
+}
+
+.card form input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+
+.card form button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px;
+  background-color: #0078D4;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
 
 
 * =================== Responsive Breakpoints =================== */
