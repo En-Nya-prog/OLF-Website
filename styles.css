@@ -306,25 +306,56 @@ h2 {
   font-size: 2rem;
   margin-bottom: 20px;
 }
-.association-group {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Two columns */
-  gap: 30px;
-  width: 90%;
-  margin: 0 auto;
+.associations {
+  padding: 40px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  background-color: #f5f8fc;
 }
 
-
-
-
-.association {
-  width: 45%;
+.association-card {
+  background: #e7f6cd;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  padding: 20px;
   text-align: center;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.association-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.association-card img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.association-card h3 {
+  margin: 10px 0 8px;
+  font-size: 20px;
+  color: #2c3e50;
+}
+
+.association-card p {
+  font-size: 15px;
+  color: #444;
 }
 
 @media (max-width: 768px) {
-  .association-group {
-    grid-template-columns: 1fr;
+  .association-card {
+    width: 90%;
   }
 }
 
