@@ -296,6 +296,8 @@ h2 {
   .ministry-card {
     width: 90%;
   }
+ 
+
 }
 .section-wrapper {
   text-align: center;
@@ -306,25 +308,24 @@ h2 {
   font-size: 2rem;
   margin-bottom: 20px;
 }
+
+/* Fixes alignment and grid layout */
 .associations {
   padding: 40px 20px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 24px;
-  justify-content: center;
   background-color: white;
+  max-width: 1200px;
   margin: 0 auto;
-}
-
-.association-card {
-  height: 100%;
 }
 
 .association-card {
   background: #e7f6cd;
   border-radius: 12px;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
   padding: 20px;
   text-align: center;
   transition: transform 0.3s ease;
@@ -332,6 +333,7 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100%;
 }
 
 .association-card:hover {
@@ -358,13 +360,14 @@ h2 {
   color: #444;
 }
 
+/* Mobile responsiveness */
 @media (max-width: 768px) {
   .association-card {
     width: 90%;
+    max-width: none;
   }
 }
 
-}
 .secondary-image {
   width: 120px;
   height: 120px;
