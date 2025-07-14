@@ -299,7 +299,6 @@ h2 {
  
 
 }
-/* Section container and heading */
 .section-wrapper {
   text-align: center;
   padding: 40px 20px;
@@ -311,22 +310,17 @@ h2 {
   margin-bottom: 20px;
 }
 
-/* Grid layout */
-
 .associations {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 24px;
-  background-color: white;
-  padding: 40px 20px;
   max-width: 1200px;
-  width: 100%;
   margin: 0 auto;
-  box-sizing: border-box;
+  width: 100%;
+  background-color: white;
+  padding-bottom: 40px;
 }
 
-
-/* Card styling */
 .association-card {
   background: #e7f6cd;
   border-radius: 12px;
@@ -338,9 +332,6 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
-  max-width: 300px;
-  margin: 0 auto;
 }
 
 .association-card:hover {
@@ -348,7 +339,6 @@ h2 {
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
 }
 
-/* Card content */
 .association-card img {
   width: 180px;
   height: 180px;
@@ -358,8 +348,8 @@ h2 {
 }
 
 .association-card h3 {
-  margin: 10px 0 8px;
   font-size: 20px;
+  margin: 10px 0 8px;
   color: #2c3e50;
 }
 
@@ -368,25 +358,25 @@ h2 {
   color: #444;
 }
 
-/* Responsive layout */
 @media (max-width: 768px) {
+  .associations {
+    grid-template-columns: 1fr;
+  }
+
   .association-card {
     width: 90%;
     max-width: none;
   }
-
-  .associations {
-    grid-template-columns: 1fr;
-    justify-items: center;
-  }
-  .site-footer {
-  background-color: #001f3f; /* Deep navy blue */
-  color: #fff;
-  padding: 40px 20px;
-  text-align: center;
 }
 
-
+/* Footer styling */
+.site-footer {
+  background-color: #001f3f; /* Navy blue */
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 14px;
+}
 
 /* =================== Contact =================== */
 .contact-section {
