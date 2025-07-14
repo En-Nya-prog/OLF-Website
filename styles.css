@@ -299,9 +299,12 @@ h2 {
  
 
 }
+/* Wrapper and Heading */
 .section-wrapper {
   text-align: center;
   margin: 40px auto;
+  padding: 40px 20px;
+  background-color: white;
 }
 
 .section-heading {
@@ -309,19 +312,17 @@ h2 {
   margin-bottom: 20px;
 }
 
-/* Fixes alignment and grid layout */
+/* Grid Layout for Cards */
 .associations {
-  padding: 40px 20px;
   display: grid;
-  place-items: center; /* ✅ Centers grid items horizontally & vertically */
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 24px;
-  background-color: white;
-  max-width: 1000px;     /* ✅ Limits overall width */
-  margin: 0 auto;         /* ✅ Centers grid container */
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
 }
 
-
+/* Individual Card Styling */
 .association-card {
   background: #e7f6cd;
   border-radius: 12px;
@@ -337,17 +338,13 @@ h2 {
   align-items: center;
   height: 100%;
 }
-.association-card {
-  width: 100%;
-  max-width: 300px;
-  height: 100%;
-}
 
 .association-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
 }
 
+/* Card Content */
 .association-card img {
   width: 180px;
   height: 180px;
@@ -367,46 +364,12 @@ h2 {
   color: #444;
 }
 
-/* Mobile responsiveness */
+/* Mobile Responsive Cards */
 @media (max-width: 768px) {
   .association-card {
     width: 90%;
     max-width: none;
   }
-}
-
-.secondary-image {
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 6px;
-  margin-top: 10px;
-}
-.event-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 20px;
-  border-radius: 10px;
-  width: 100%;
-  max-width: 300px; /* optional for card width */
-  transition: 0.3s ease-in-out;
-  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
-}
-.event-card {
-  width: 100%;
-  max-width: 300px;
-}
-
-}
-.event-card:nth-child(1) { background-color: #FFD700; color: #2E3A59; }
-.event-card:nth-child(2) { background-color: #FF5733; color: white; }
-.event-card:nth-child(3) { background-color: #28A745; color: white; }
-.event-card:nth-child(4) { background-color: #007BFF; color: white; }
-.event-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
 }
 
 /* =================== Contact =================== */
