@@ -377,25 +377,38 @@ h2 {
   padding: 40px 20px;
   font-size: 14px;
 }
-/* Event card layout (used for events like Sacraments, Ministry of the Word, etc.) */
+.event-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  padding: 40px 20px;
+  background-color: #f5f8fc; /* light background */
+}
+
 .event-card {
+  padding: 20px;
+  border-radius: 12px;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
-  padding: 20px;
-  border-radius: 10px;
-  width: 100%;
-  max-width: 300px;
-  transition: 0.3s ease-in-out;
-  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
-  margin: 0 auto;
+  cursor: pointer;
 }
 
 .event-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
+
+/* Add unique background colors per card */
+.event-card:nth-child(1) { background-color: #FFD700; color: #2E3A59; }
+.event-card:nth-child(2) { background-color: #FF5733; color: white; }
+.event-card:nth-child(3) { background-color: #28A745; color: white; }
+.event-card:nth-child(4) { background-color: #007BFF; color: white; }
 
 .event-card img {
   width: 180px;
@@ -405,20 +418,20 @@ h2 {
   margin-bottom: 12px;
 }
 
-/* Optional background color variations */
-.event-card:nth-child(1) { background-color: green; color: #2E3A59; }
-.event-card:nth-child(2) { background-color: #FF5733; color: green; }
-.event-card:nth-child(3) { background-color: #28A745; color: yellow; }
-.event-card:nth-child(4) { background-color: #007BFF; color: red; }
-
-/* Secondary images used in galleries or nested sections */
-.secondary-image {
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 6px;
-  margin-top: 10px;
+.event-card h3 {
+  margin: 10px 0 8px;
+  font-size: 20px;
 }
+
+.event-card p {
+  font-size: 15px;
+}
+@media (max-width: 768px) {
+  .event-card {
+    width: 90%;
+  }
+}
+
 
 /* =================== Contact =================== */
 .contact-section {
