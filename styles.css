@@ -465,6 +465,15 @@ h2 {
 .event-card p {
   margin: 10px 0;
 }
+.event-container {
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto; /* ✅ Center the container */
+  border-radius: 12px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
 
 /* Responsive fix */
 @media (max-width: 768px) {
