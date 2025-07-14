@@ -385,6 +385,18 @@ h2 {
   padding: 40px 20px;
   background-color: #f5f8fc; /* light background */
 }
+.event-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  align-items: center; /* ✅ Vertically aligns items inside */
+  min-height: 100vh;   /* ✅ Takes full screen height */
+  padding: 40px 20px;
+  background-color: #f5f8fc;
+  box-sizing: border-box;
+}
+
 
 .event-card {
   padding: 20px;
