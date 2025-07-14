@@ -297,6 +297,10 @@ h2 {
     width: 90%;
   }
 }
+.container {
+  text-align: center;
+  margin: 0 auto;
+}
 .associations {
   padding: 40px 20px;
   display: flex;
@@ -304,6 +308,11 @@ h2 {
   gap: 24px;
   justify-content: center;
   background-color: #fdfdfd;
+}
+
+.association {
+  width: 45%;
+  text-align: center;
 }
 
 .association-card {
