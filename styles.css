@@ -299,10 +299,9 @@ h2 {
  
 
 }
-/* Wrapper and Heading */
+/* Section container and heading */
 .section-wrapper {
   text-align: center;
-  margin: 40px auto;
   padding: 40px 20px;
   background-color: white;
 }
@@ -312,23 +311,23 @@ h2 {
   margin-bottom: 20px;
 }
 
-/* Grid Layout for Cards */
+/* Grid layout */
 .associations {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 24px;
+  background-color: white;
   max-width: 1200px;
   margin: 0 auto;
   width: 100%;
+  box-sizing: border-box;
 }
 
-/* Individual Card Styling */
+/* Card styling */
 .association-card {
   background: #e7f6cd;
   border-radius: 12px;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  max-width: 300px;
   padding: 20px;
   text-align: center;
   transition: transform 0.3s ease;
@@ -336,7 +335,9 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100%;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
 }
 
 .association-card:hover {
@@ -344,7 +345,7 @@ h2 {
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
 }
 
-/* Card Content */
+/* Card content */
 .association-card img {
   width: 180px;
   height: 180px;
@@ -364,13 +365,19 @@ h2 {
   color: #444;
 }
 
-/* Mobile Responsive Cards */
+/* Responsive layout */
 @media (max-width: 768px) {
   .association-card {
     width: 90%;
     max-width: none;
   }
+
+  .associations {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
 }
+
 
 /* =================== Contact =================== */
 .contact-section {
