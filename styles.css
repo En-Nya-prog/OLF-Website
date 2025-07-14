@@ -306,13 +306,15 @@ h2 {
   font-size: 2rem;
   margin-bottom: 20px;
 }
-
 .association-group {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  width: 90%;
+  margin: 0 auto;
+  justify-items: center;
 }
+
 
 
 .association {
@@ -339,15 +341,19 @@ h2 {
   border-radius: 6px;
   margin-top: 10px;
 }
-
 .event-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   padding: 20px;
   border-radius: 10px;
-  margin: 15px auto;
-  width: 80%;
-  text-align: center;
+  width: 100%;
+  max-width: 300px; /* optional for card width */
   transition: 0.3s ease-in-out;
   box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
 }
 .event-card:nth-child(1) { background-color: #FFD700; color: #2E3A59; }
 .event-card:nth-child(2) { background-color: #FF5733; color: white; }
