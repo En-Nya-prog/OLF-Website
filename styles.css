@@ -377,6 +377,15 @@ h2 {
   padding: 40px 20px;
   font-size: 14px;
 }
+.centered-event {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;              /* ✅ Full viewport height */
+  background-color: #FFD700;      /* Or use .coral, .green etc. */
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
 .event-section {
   display: flex;
   flex-wrap: wrap;
