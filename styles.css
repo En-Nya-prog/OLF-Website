@@ -313,12 +313,14 @@ h2 {
 .associations {
   padding: 40px 20px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  place-items: center; /* ✅ Centers grid items horizontally & vertically */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 24px;
   background-color: white;
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 1000px;     /* ✅ Limits overall width */
+  margin: 0 auto;         /* ✅ Centers grid container */
 }
+
 
 .association-card {
   background: #e7f6cd;
@@ -333,6 +335,11 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100%;
+}
+.association-card {
+  width: 100%;
+  max-width: 300px;
   height: 100%;
 }
 
