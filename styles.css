@@ -502,13 +502,16 @@ h2 {
   padding: 20px;
   box-sizing: border-box;
 }
-
-.event-container {
-  width: 100%;
-  max-width: 350px;
-  border-radius: 12px;
-  padding: 20px;
+.event-section {
+  display: flex;
+  flex-direction: column;      /* Stack containers vertically */
+  justify-content: center;     /* Center vertically within the section */
+  align-items: center;         /* Center horizontally */
+  min-height: 80vh;            /* Gives height for vertical centering */
+  gap: 24px;
+  padding: 40px 20px;
   box-sizing: border-box;
+  background-color: #f5f8fc;
 }
 
 .event-container.gold    { background-color: #FFD700; color: #2E3A59; }
