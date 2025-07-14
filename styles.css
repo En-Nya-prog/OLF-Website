@@ -410,6 +410,49 @@ h2 {
 .event-card:nth-child(3) { background-color: #28A745; color: white; }
 .event-card:nth-child(4) { background-color: #007BFF; color: white; }
 
+.event-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+/* Colored containers */
+.event-container {
+  padding: 20px;
+  border-radius: 12px;
+  width: 300px;
+}
+
+.gold {
+  background-color: #FFD700;
+  color: #2E3A59;
+}
+
+.coral {
+  background-color: #FF5733;
+  color: white;
+}
+
+.green {
+  background-color: #28A745;
+  color: white;
+}
+
+.navy {
+  background-color: #007BFF;
+  color: white;
+}
+
+/* Event card inside each container */
+.event-card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .event-card img {
   width: 180px;
   height: 180px;
@@ -418,19 +461,18 @@ h2 {
   margin-bottom: 12px;
 }
 
-.event-card h3 {
-  margin: 10px 0 8px;
-  font-size: 20px;
+.event-card h3,
+.event-card p {
+  margin: 10px 0;
 }
 
-.event-card p {
-  font-size: 15px;
-}
+/* Responsive fix */
 @media (max-width: 768px) {
-  .event-card {
+  .event-container {
     width: 90%;
   }
 }
+
 
 
 /* =================== Contact =================== */
