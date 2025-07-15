@@ -88,19 +88,25 @@ form.addEventListener("submit", async (e) => {
   }
 });
 <script>
-  const heroImages = [
-    'url("images/R.jpg")',
-    'url("images/b1.jpg")',
-    'url("images/b2.jpg")'
-  ];
+  document.addEventListener("DOMContentLoaded", () => {
+    const heroImages = [
+      'url("images/R.jpg")',
+      'url("images/b1.jpg")',
+      'url("images/b2.jpg")'
+    ];
 
-  let currentIndex = 0;
-  const heroSection = document.querySelector('.hero');
+    let currentIndex = 0;
+    const heroSection = document.querySelector('.hero');
 
-  heroSection.style.backgroundImage = heroImages[currentIndex];
+    if (heroSection) {
+      heroSection.style.backgroundImage = heroImages[currentIndex];
 
-  setInterval(() => {
-    currentIndex = (currentIndex + 1) % heroImages.length;
-    heroSection.style.backgroundImage = heroImages[currentIndex];
-  }, 5000);
+      setInterval(() => {
+        currentIndex = (currentIndex + 1) % heroImages.length;
+        heroSection.style.backgroundImage = heroImages[currentIndex];
+      }, 5000);
+    } else {
+      console.log('Could not find .hero section');
+    }
+  });
 </script>
