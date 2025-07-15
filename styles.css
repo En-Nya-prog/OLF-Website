@@ -405,6 +405,22 @@ h2 {
   background-color: #f5f8fc;
   box-sizing: border-box;
 }
+.event-card button {
+  background-color: #ffffff;
+  color: #001f3f;
+  border: none;
+  padding: 10px 16px;
+  margin-top: 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease;
+}
+
+.event-card button:hover {
+  background-color: #e0e0e0;
+}
 
 
 .event-card {
