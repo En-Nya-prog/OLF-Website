@@ -87,26 +87,3 @@ form.addEventListener("submit", async (e) => {
     status.style.color = "red";
   }
 });
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const heroImages = [
-      'url("images/R.jpg")',
-      'url("images/b1.jpg")',
-      'url("images/b2.jpg")'
-    ];
-
-    let currentIndex = 0;
-    const heroSection = document.querySelector('.hero');
-
-    if (heroSection) {
-      heroSection.style.backgroundImage = heroImages[currentIndex];
-
-      setInterval(() => {
-        currentIndex = (currentIndex + 1) % heroImages.length;
-        heroSection.style.backgroundImage = heroImages[currentIndex];
-      }, 5000);
-    } else {
-      console.log('Could not find .hero section');
-    }
-  });
-</script>
