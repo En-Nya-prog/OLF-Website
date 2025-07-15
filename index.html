@@ -44,7 +44,30 @@
  <img src="R.jpg" alt="Church Image" style="width: 100%;max-width: 600px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); ">
  <figcaption style="font-style:italic;margin-top: 0.5rem;">The building of Our Lady of Fatima Catholic Church</figcaption>
   </figure>
- 
+ <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const heroImages = [
+      'url("images/R.jpg")',
+      'url("images/b1.jpg")',
+      'url("images/b2.jpg")'
+    ];
+
+    let currentIndex = 0;
+    const heroSection = document.querySelector('.hero');
+
+    if (heroSection) {
+      heroSection.style.backgroundImage = heroImages[currentIndex];
+
+      setInterval(() => {
+        currentIndex = (currentIndex + 1) % heroImages.length;
+        heroSection.style.backgroundImage = heroImages[currentIndex];
+      }, 5000);
+    } else {
+      console.log("Hero section not found");
+    }
+  });
+</script>
+
 </section>
 
     </section>
