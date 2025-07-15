@@ -378,16 +378,17 @@ h2 {
   font-size: 14px;
 }
 
+
 /* ✅ Main event section styling */
 .event-section {
   display: flex;
   flex-direction: column;
-  justify-content: center;      /* Vertically centers stacked containers */
-  align-items: center;          /* Horizontally centers each container */
+  justify-content: center;           /* Vertically centers stacked containers */
+  align-items: center;               /* Horizontally centers each container */
   gap: 24px;
   min-height: 100vh;
   padding: 40px 20px;
-  background-color: #f5f8fc;
+  background-color: #f5f8fc;         /* Soft neutral background */
   box-sizing: border-box;
 }
 
@@ -398,17 +399,15 @@ h2 {
   margin: 0 auto;
   border-radius: 12px;
   padding: 20px;
-  min-height: 220px;            /* Ensures background color is visible */
+  min-height: 220px;
   box-sizing: border-box;
   text-align: center;
 }
-.event-container.gold  { background-color: #FFD700 !important; color: #2E3A59; }
-.event-container.coral { background-color: #FF5733 !important; color: white; }
-.event-container.green { background-color: #28A745 !important; color: white; }
-.event-container.navy  { background-color: #007BFF !important; color: white;
-                       }
-.event-section {
-  background-color: #f5f8fc;
+
+/* 🎨 Unique background themes */
+.event-container.gold {
+  background-color: #FFD700 !important;
+  color: #2E3A59;
 }
 
 .event-container.coral {
@@ -425,12 +424,8 @@ h2 {
   background-color: #007BFF !important;
   color: white;
 }
-.event-container {
-  min-height: 220px;
-}
 
-
-/* ✅ Card content layout */
+/* ✅ Card layout inside containers */
 .event-card {
   display: flex;
   flex-direction: column;
