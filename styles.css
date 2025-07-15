@@ -393,6 +393,19 @@ h2 {
 }
 
 /* ✅ Colored event containers */
+
+.event-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  min-height: 100vh;
+  padding: 40px 20px;
+  background-color: #f5f8fc;
+  box-sizing: border-box;
+}
+
 .event-container {
   width: 100%;
   max-width: 350px;
@@ -404,26 +417,11 @@ h2 {
   text-align: center;
 }
 
-/* 🎨 Unique background themes */
-.event-container.gold {
-  background-color: #FFD700 !important;
-  color: #2E3A59;
-}
-
-.event-container.coral {
-  background-color: #FF5733 !important;
-  color: white;
-}
-
-.event-container.green {
-  background-color: #28A745 !important;
-  color: white;
-}
-
-.event-container.navy {
-  background-color: #007BFF !important;
-  color: white;
-}
+/* Color themes */
+.event-container.gold  { background-color: #FFD700 !important; color: #2E3A59; }
+.event-container.coral { background-color: #FF5733 !important; color: white; }
+.event-container.green { background-color: #28A745 !important; color: white; }
+.event-container.navy  { background-color: #007BFF !important; color: white; }
 
 /* ✅ Card layout inside containers */
 .event-card {
