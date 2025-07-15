@@ -390,15 +390,18 @@ h2 {
   box-sizing: border-box;
 }
 
+
 /* ✅ Individual colored containers */
 .event-container {
   width: 100%;
-  max-width: 350px;
+  max-width: 350px;      /* ✅ constrains horizontal width */
+  margin: 0 auto;         /* ✅ centers the container horizontally */
   border-radius: 12px;
   padding: 20px;
   box-sizing: border-box;
   text-align: center;
 }
+
 
 /* 🎨 Background color themes */
 .event-container.gold  {
