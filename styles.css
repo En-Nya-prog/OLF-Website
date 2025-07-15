@@ -377,7 +377,7 @@ h2 {
   padding: 40px 20px;
   font-size: 14px;
 }
-/* ✅ Main section: centers content vertically and horizontally */
+
 /* ✅ Main event section styling */
 .event-section {
   display: flex;
@@ -476,6 +476,10 @@ h2 {
     width: 90%;
   }
 }
+.event-container {
+  border: 2px dashed red;
+}
+
 
 
 /* =================== Contact =================== */
