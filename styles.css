@@ -378,11 +378,12 @@ h2 {
   font-size: 14px;
 }
 /* ✅ Main section: centers content vertically and horizontally */
+/* ✅ Main event section styling */
 .event-section {
   display: flex;
   flex-direction: column;
-  justify-content: center;   /* vertical centering */
-  align-items: center;       /* horizontal centering */
+  justify-content: center;      /* Vertically centers stacked containers */
+  align-items: center;          /* Horizontally centers each container */
   gap: 24px;
   min-height: 100vh;
   padding: 40px 20px;
@@ -390,21 +391,20 @@ h2 {
   box-sizing: border-box;
 }
 
-
-/* ✅ Individual colored containers */
+/* ✅ Colored event containers */
 .event-container {
   width: 100%;
-  max-width: 350px;      /* ✅ constrains horizontal width */
-  margin: 0 auto;         /* ✅ centers the container horizontally */
+  max-width: 350px;
+  margin: 0 auto;
   border-radius: 12px;
   padding: 20px;
+  min-height: 220px;            /* Ensures background color is visible */
   box-sizing: border-box;
   text-align: center;
 }
 
-
-/* 🎨 Background color themes */
-.event-container.gold  {
+/* 🎨 Color themes */
+.event-container.gold {
   background-color: #FFD700;
   color: #2E3A59;
 }
@@ -424,7 +424,7 @@ h2 {
   color: white;
 }
 
-/* ✅ Card inside container */
+/* ✅ Card content layout */
 .event-card {
   display: flex;
   flex-direction: column;
@@ -450,7 +450,7 @@ h2 {
   margin: 10px 0;
 }
 
-/* ✅ Button styling with visibility fix */
+/* ✅ “View Details” button styling */
 .event-card button {
   background-color: #ffffff !important;
   color: #001f3f !important;
@@ -470,12 +470,13 @@ h2 {
   background-color: #e0e0e0;
 }
 
-/* ✅ Responsive adjustments */
+/* ✅ Mobile responsiveness */
 @media (max-width: 768px) {
   .event-container {
     width: 90%;
   }
 }
+
 
 /* =================== Contact =================== */
 .contact-section {
