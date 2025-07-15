@@ -87,4 +87,22 @@ form.addEventListener("submit", async (e) => {
     status.style.color = "red";
   }
 });
+const heroImages = [
+  'url("images/R.jpg")',
+  'url("images/b1.jpg")',
+  'url("images/b2.jpg")'
+];
+let currentIndex = 0;
+const heroSection = document.querySelector('.hero');
+
+// Set initial background
+heroSection.style.backgroundImage = heroImages[currentIndex];
+
+// Change background every 5 seconds
+setInterval(() => {
+  currentIndex = (currentIndex + 1) % heroImages.length;
+  heroSection.style.backgroundImage = heroImages[currentIndex];
+}, 5000);
+
+
 
