@@ -406,8 +406,8 @@ h2 {
   box-sizing: border-box;
 }
 .event-card button {
-  background-color: #ffffff;
-  color: #001f3f;
+  background-color: #ffffff;         /* White button for contrast */
+  color: #001f3f;                    /* Navy blue text for readability */
   border: none;
   padding: 10px 16px;
   margin-top: 12px;
@@ -415,7 +415,7 @@ h2 {
   font-weight: bold;
   cursor: pointer;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  transition: background 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
 .event-card button:hover {
