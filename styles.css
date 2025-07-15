@@ -406,20 +406,24 @@ h2 {
   box-sizing: border-box;
 }
 .event-card button {
-  background-color: #ffffff;         /* White button for contrast */
-  color: #001f3f;                    /* Navy blue text for readability */
+  background-color: #ffffff;       /* Bright white background */
+  color: #001f3f;                  /* Deep navy text */
   border: none;
   padding: 10px 16px;
   margin-top: 12px;
   border-radius: 6px;
-  font-weight: bold;
+  font-weight: 600;
+  font-size: 14px;
   cursor: pointer;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
   transition: background-color 0.3s ease;
+  z-index: 2;                      /* Helps avoid layering issues */
 }
-
 .event-card button:hover {
-  background-color: #e0e0e0;
+  background-color: #e6e6e6;
+}
+.event-card button {
+  color: #001f3f !important;
 }
 
 
